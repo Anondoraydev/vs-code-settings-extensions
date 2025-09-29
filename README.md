@@ -1,5 +1,7 @@
 code --install-extension aaron-bond.better-comments
+
 code --install-extension adam-bender.commit-message-editor
+
 code --install-extension adpyke.codesnap
 code --install-extension akashsharma01.code-tester
 code --install-extension bradlc.vscode-tailwindcss
