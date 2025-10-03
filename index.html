@@ -1,104 +1,122 @@
 {
-    // editor
-    "editor.fontSize": 20,
-    "editor.fontFamily": "Fira Code, Operator Mono",
-    "editor.fontLigatures": true,
-    "editor.wordWrap": "on",
-    "editor.minimap.enabled": false,
-    "editor.tokenColorCustomizations": {
-      "textMateRules": [
-        {
-          "scope": "comment",
-          "settings": {
-            "fontStyle": "italic"
-          }
+  "editor.fontSize": 16,
+  "editor.fontFamily": "JetBrains Mono, Fira Code, Consolas, monospace",
+  "editor.fontLigatures": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.smoothScrolling": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.renderControlCharacters": true,
+
+  "workbench.colorCustomizations": {
+    "editor.background": "#0e0e20",
+    "editor.foreground": "#FFFFFF",
+    "editorCursor.foreground": "#04DE94",
+    "editor.lineHighlightBackground": "#1c1c38",
+    "editor.selectionBackground": "#D227E880",
+    "editorWhitespace.foreground": "#666688",
+    "editorBracketMatch.background": "#222240",
+    "editorBracketMatch.border": "#ff77ff"
+  },
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      { "scope": "source, meta", "settings": { "foreground": "#FFFFFF" } },
+      {
+        "scope": "keyword, keyword.control",
+        "settings": { "foreground": "#D227E8" }
+      },
+      {
+        "scope": "storage.type, storage.modifier",
+        "settings": { "foreground": "#FFB800" }
+      },
+      {
+        "scope": "variable, variable.other.readwrite",
+        "settings": { "foreground": "#04DE94" }
+      },
+      {
+        "scope": "variable.parameter",
+        "settings": { "foreground": "#33FF77" }
+      },
+      {
+        "scope": "constant.other.environment",
+        "settings": { "foreground": "#FF77FF" }
+      },
+      {
+        "scope": "entity.name.function, meta.function-call, support.function",
+        "settings": { "foreground": "#3399FF" }
+      },
+      { "scope": "entity.name.class", "settings": { "foreground": "#FFAA33" } },
+      {
+        "scope": "entity.name.type, entity.name.interface, support.type",
+        "settings": { "foreground": "#BB88FF" }
+      },
+      {
+        "scope": "constant.numeric, constant.numeric.float, constant.numeric.integer",
+        "settings": { "foreground": "#33FFCC" }
+      },
+      { "scope": "constant.language", "settings": { "foreground": "#FFFF66" } },
+      {
+        "scope": "constant.character, constant.character.escape",
+        "settings": { "foreground": "#FF99CC" }
+      },
+      {
+        "scope": "string, string.quoted, string.template",
+        "settings": { "foreground": "#88FF88" }
+      },
+      { "scope": "string.regexp", "settings": { "foreground": "#FFCC88" } },
+      {
+        "scope": "comment, punctuation.definition.comment",
+        "settings": { "foreground": "#8888FF", "fontStyle": "italic" }
+      },
+      { "scope": "keyword.operator", "settings": { "foreground": "#66FFFF" } },
+      { "scope": "punctuation", "settings": { "foreground": "#FF66CC" } },
+      {
+        "scope": "entity.other.attribute-name, meta.tag.attributes",
+        "settings": { "foreground": "#FF33FF" }
+      },
+      {
+        "scope": "support.constant.property-value",
+        "settings": { "foreground": "#FFFF33" }
+      },
+      { "scope": "meta.decorator", "settings": { "foreground": "#00FF77" } },
+      {
+        "scope": "keyword.import, keyword.export, keyword.package",
+        "settings": { "foreground": "#FF8800" }
+      },
+      {
+        "scope": "invalid",
+        "settings": {
+          "foreground": "#FFFFFF",
+          "background": "#04DE94",
+          "fontStyle": "underline"
         }
-      ]
-    },
-    // cursor
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.cursorBlinking": "expand",
-    // config related to code formatting
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "[javascript]": {
-      "editor.formatOnSave": false,
-      "editor.defaultFormatter": null
-    },
-    "[javascriptreact]": {
-      "editor.formatOnSave": false,
-      "editor.defaultFormatter": null
-    },
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.fixAll.tslint": true,
-      "source.organizeImports": true
-    },
-    "eslint.alwaysShowStatus": true,
-    //terminal
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.fontWeight": "normal",
-    "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
-    "workbench.colorTheme": "Community Material Theme Darker High Contrast",
-    "workbench.iconTheme": "vscode-icons",
-    // terminal customization
-    "workbench.colorCustomizations": {
-      "terminal.background": "#1D2021",
-      "terminal.foreground": "#A89984",
-      "terminalCursor.background": "#A89984",
-      "terminalCursor.foreground": "#A89984",
-      "terminal.ansiBlack": "#1D2021",
-      "terminal.ansiBlue": "#0D6678",
-      "terminal.ansiBrightBlack": "#665C54",
-      "terminal.ansiBrightBlue": "#0D6678",
-      "terminal.ansiBrightCyan": "#8BA59B",
-      "terminal.ansiBrightGreen": "#95C085",
-      "terminal.ansiBrightMagenta": "#8F4673",
-      "terminal.ansiBrightRed": "#FB543F",
-      "terminal.ansiBrightWhite": "#FDF4C1",
-      "terminal.ansiBrightYellow": "#FAC03B",
-      "terminal.ansiCyan": "#8BA59B",
-      "terminal.ansiGreen": "#95C085",
-      "terminal.ansiMagenta": "#8F4673",
-      "terminal.ansiRed": "#FB543F",
-      "terminal.ansiWhite": "#A89984",
-      "terminal.ansiYellow": "#FAC03B"
-    }
-  }
+      },
+      { "scope": "markup.inserted", "settings": { "foreground": "#33FF88" } },
+      { "scope": "markup.deleted", "settings": { "foreground": "#FF77AA" } },
+      { "scope": "markup.changed", "settings": { "foreground": "#FFCC33" } },
+      { "scope": "meta.brace", "settings": { "foreground": "#D2FF27" } },
+      { "scope": "meta.paren", "settings": { "foreground": "#27D2FF" } },
+      { "scope": "meta.bracket", "settings": { "foreground": "#FF27D2" } },
+      {
+        "scope": "punctuation.terminator",
+        "settings": { "foreground": "#AAFF33" }
+      },
+      {
+        "scope": "punctuation.separator",
+        "settings": { "foreground": "#33AAFF" }
+      }
+    ]
+  },
 
-
-
-
-                                                  VS Code Extension
-                                            ----------------------------------
-                                        ----- -------------------------------------
-                                        1.Auto Import - ES6, TS, JSX, TSX (Sergey Korenuk)
-                                        2.Auto Rename Tag (Jun Han)
-                                        3.Debugger for Chrome
-                                        4.ESLint (Microsoft)
-                                        5.indent-rainbow (oderwat)
-                                        6.HTML CSS Support (ecmel)
-                                        7.JavaScript (ES6) code snippets (charalampos karypidis)
-                                        8.Live Server (Ritwick Dey)
-                                        9.Live Sass Compiler (Glenn Marks)
-                                        10.Material Icon Theme (Philipp Kief)
-                                        11.npm Intellisense (Christian Kohler)
-                                        12.Path Intellisense (Christian Kohler)
-                                        13.Postman (Postman)
-                                        14.Prettier - Code formatted (Prettier)
-                                        15.Reactjs code snippets (charalampos karypidis)
-                                        16.Simple React Snippets (Burke Holland)
-                                        17.Snipped (Jefferson Licet)
-                                        18.Stylelint (Stylelint)
-                                        19.WordPress Snippets (wpprotools.io)
-                                        20.VSCode React Refactor (planbcoding)
-                                        21.Tailwind CSS IntelliSense (Tailwind Labs)
-                                        22.🎨 VS Code Themes
-                                        23.Andromeda 👈
-                                        24.Dracula Official
-                                        25.Night Owl
-                                        26.Shades of Purple
-                                        27.SynthWave '84
-                                        28.Ayu (Theme)
-                                        29.Auto Close Tag (Jun Han)
-1.
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Dracula Theme Soft"
+}
