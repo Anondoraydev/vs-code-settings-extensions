@@ -13,11 +13,17 @@ code --install-extension catppuccin.catppuccin-vsc
 code --install-extension catppuccin.catppuccin-vsc-icons
 
 code --install-extension christian-kohler.npm-intellisense
+
 code --install-extension christian-kohler.path-intellisense
+
 code --install-extension cweijan.dbclient-jdbc
+
 code --install-extension cweijan.vscode-postgresql-client2
+
 code --install-extension dbaeumer.vscode-eslint
+
 code --install-extension divyanshuagrawal.competitive-programming-helper
+
 code --install-extension donjayamanne.githistory
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
