@@ -27,6 +27,7 @@ code --install-extension divyanshuagrawal.competitive-programming-helper
 code --install-extension donjayamanne.githistory
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
+
 code --install-extension entuent.fira-code-nerd-font
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-close-tag
