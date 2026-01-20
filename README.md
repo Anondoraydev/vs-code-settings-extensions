@@ -60,3 +60,4 @@ code --install-extension xabikos.javascriptsnippets
 code --install-extension xabikos.reactsnippets
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension ziyasal.vscode-open-in-github
+
